@@ -1,0 +1,10 @@
+[package]
+name = "apps"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+channel = { version = "0.1.0", path = "../channel" }
+embassy-sync = "0.6.0"
+embedded-hal-async = "1.0.0"
+futures = { version = "0.3.30", default-features = false }

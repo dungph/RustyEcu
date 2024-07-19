@@ -1,0 +1,9 @@
+[package]
+name = "io-handler"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+channel = { version = "0.1.0", path = "../channel" }
+embedded-hal = "1.0.0"
+embedded-hal-async = "1.0.0"

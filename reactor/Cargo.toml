@@ -1,0 +1,21 @@
+[package]
+name = "reactor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rtic = {version=  "2.1.1", features = ["thumbv7-backend"]}
+defmt = "0.3"
+defmt-rtt = "0.4.1"
+panic-probe = { version = "0.3", features = ["print-defmt"] }
+rtic-monotonics = "2.0.2"
+embassy-stm32 = { version = "0.1.0", features = [ "defmt", "time-driver-any", "stm32f407vg", "memory-x", "unstable-pac", "exti"]  }
+cortex-m = { version = "0.7.6", features = ["critical-section-single-core"] }
+cortex-m-rt = "0.7.0"
+embedded-hal = "1"
+embassy-time = "0.3.1"
+apps = { version = "0.1.0", path = "../apps" }
+channel = { version = "0.1.0", path = "../channel" }
+can-if = { version = "0.1.0", path = "../can-if" }
+io-handler = { version = "0.1.0", path = "../io-handler" }
+
